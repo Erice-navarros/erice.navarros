@@ -1,93 +1,71 @@
-/* Margens e preenchimento padrão */
+/* Estilo geral do corpo */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('Imagem/ipe.jpg'); /* Caminho da imagem de fundo */
-    background-size: cover; /* Ajusta a imagem para cobrir o fundo */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Não repete a imagem */
-    background-attachment: fixed; /* Imagem fixa durante o rolar da página */
-    color: black;
-    text-shadow: 1px 1px 1px rgb(22, 21, 21); /* Sombra do texto */
 }
 
-/* Estilo para o menu lateral */
-nav.sidebar {
-    width: 220px; /* Largura do menu lateral */
-    background-color: #047900; /* Cor de fundo do menu */
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para o menu lateral */
-    position: fixed; /* Fixa o menu na lateral */
-    height: 100%; /* Faz com que o menu ocupe toda a altura da tela */
-    border-radius: 15px; /* Bordas arredondadas no menu lateral */
-    overflow: hidden; /* Garante que o conteúdo não saia das bordas arredondadas */
+/* Contêiner principal */
+.container {
+    display: flex;
 }
 
-/* Estilo para a lista de itens do menu */
-nav.sidebar ul {
-    list-style-type: none; /* Remove bolinhas padrão */
+/* Menu lateral */
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
     padding: 0;
-    margin: 0;
 }
 
-nav.sidebar ul li {
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Conteúdo principal */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Galeria de imagens */
+.gallery img {
+    width: 100%;
+    height: auto;
     margin-bottom: 10px;
 }
 
-/* Estilo para os links do menu */
-nav.sidebar ul li a {
-    text-decoration: none; 
-    color: white; 
-    background-color: #92d0f3; 
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
     padding: 10px;
-    border-radius: 10px; /* Bordas arredondadas nos links do menu */
-    display: block;
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s; 
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-nav.sidebar ul li a:hover {
-    background-color: white; 
-    color: #024a96; 
-}
-
-/* Estilo para a área principal */
-main.content {
-    margin-left: 240px; /* Espaço para o menu lateral */
-    padding: 20px;
-}
-
-/* Estilo para o rodapé */
-footer {
-    background-color: rgba(245, 193, 200, 0.9);
-    color: #fff;
-    text-align: center;
+form button {
+    margin-top: 10px;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 10; 
+    background-color: #28a745;
+    color: white;
+   
 }
-
-/* Estilo para a galeria de imagens */
-.gallery {
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
-    flex-wrap: wrap; 
-    padding: 20px; 
-}
-
-.gallery img {
-    width: 300px;
-    height: auto; 
-    border-radius: 8px; /* Bordas arredondadas sutis nas imagens */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    transition: transform 0.3s; 
-}
-
-.gallery img:hover {
-    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
-}
+    
