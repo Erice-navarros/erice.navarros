@@ -1,8 +1,17 @@
 /* Estilo geral do corpo */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.body {
+    
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('Imagem/ipe.jpg'); /* Caminho da imagem de fundo */
+        background-size: cover; /* Ajusta a imagem para cobrir o fundo */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Não repete a imagem */
+        background-attachment: fixed; /* Imagem fixa durante o rolar da página */
+        color: white;
+        text-shadow:1px 1px 1px rgb(155, 155, 155); /* Sombra do texto */
+    
 }
 
 /* Contêiner principal */
