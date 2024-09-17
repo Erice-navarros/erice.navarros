@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>Sobre Mim</h1>
+            <p>Olá! Meu nome é Erice Renato, sou natural do Mato Grosso do Sul, mas resido em Curitiba há tantos anos que meu coração já é Curitibano.</p>
+            
+            <div class="gallery">
+                <img src="imagem/Arara.jpg" >
+                <img src="imagem/Monumento ao Sobá.jpg">
+                <img src="imagem/Curitiba.jpg">
+            </div>
+        </main>
+        <style>
+        
+            .container{
+                    display: grid;
+                }
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-image: url('Imagem/ipe.jpg'); /* Caminho da imagem de fundo */
+                background-size: cover; /* Ajusta a imagem para cobrir o fundo */
+                background-position: center; /* Centraliza a imagem */
+                background-repeat: no-repeat; /* Não repete a imagem */
+                background-attachment: fixed; /* Imagem fixa durante o rolar da página */
+                color: white;
+                text-shadow: 1px 1px 1px rgb(155, 155, 155); /* Sombra do texto */
+        
+            }
+            .menu{
+                grid-column-start: 0;
+                grid-column-end:1 ;
+                justify-content:center ;
+                gap: 0px
+                
+            }
+            
+            h1 {
+                text-align: center;
+                font-size: 3em;
+            }
+            p {
+                line-height: 1.5;
+                text-align: center;
+            }
+            </style>
+    </div>
+</body>
+</html>
